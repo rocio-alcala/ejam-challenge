@@ -26,10 +26,10 @@ export default function NavBar() {
         ))}
       </ul>
       {/* mobile navbar */}
-      <div className="items-center flex lg:hidden justify-between py-4">
+      <div className="items-center flex lg:hidden justify-between py-3">
         <IoIosArrowBack
           size={20}
-          className="hover:cursor-pointer"
+          className="hover:cursor-pointer mx-5"
           onClick={() => {
             if (actualSlice > 0) setActualSlice(actualSlice - 1);
           }}
@@ -40,7 +40,7 @@ export default function NavBar() {
         </div>
         <IoIosArrowForward
           size={20}
-          className="hover:cursor-pointer"
+          className="hover:cursor-pointer mx-5"
           onClick={() => {
             if (actualSlice < navbarList.length - 1)
               setActualSlice(actualSlice + 1);
