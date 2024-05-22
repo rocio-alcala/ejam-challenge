@@ -15,18 +15,18 @@ export default function NavBar() {
   const [actualSlice, setActualSlice] = useState(0);
 
   return (
-    <nav className="bg-[#252F3D] text-[#FFFFFF] p-4 text-xs items-center">
+    <nav className="bg-[#252F3D] text-[#FFFFFF] text-xs items-center">
       {/* desktop navbar */}
-      <ul className="lg:flex flex-wrap justify-evenly items-center hidden">
+      <ul className="lg:flex flex-wrap justify-between items-center hidden px-20">
         {navbarList.map((item) => (
-          <li key={item.text} className="items-center flex gap-3">
+          <li key={item.text} className="items-center py-4 flex gap-3">
             <img src={item.imgPath} className="h-[22px]" />
             <p>{item.text}</p>
           </li>
         ))}
       </ul>
       {/* mobile navbar */}
-      <div className="items-center flex lg:hidden justify-between">
+      <div className="items-center flex lg:hidden justify-between py-4">
         <IoIosArrowBack
           size={20}
           className="hover:cursor-pointer"
