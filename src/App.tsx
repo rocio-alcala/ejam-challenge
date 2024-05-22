@@ -1,30 +1,25 @@
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import NavBar from "./components/NavBar";
-import McAfeeIcon from "./assets/McAfee_Secure.png";
-import NortonIcon from "./assets/norton-antivirus-logo 1.png";
-import ClarifitionIcon from "./assets/clarifion-logo-1.png";
+import Steps from "./components/Steps";
 
 function App() {
   return (
     <div className="flex flex-col min-h-svh">
       <NavBar></NavBar>
       <main className="flex-1 md:px-20">
-        <header className="flex justify-between shadow-xl shadow-slate-100 md:shadow-none p-5 lg:px-0">
-          <img
-            className="h-[20px] md:h-[32px] object-scale-down"
-            src={ClarifitionIcon}
-          ></img>
-          <div className="shrink flex flex-nowrap ">
-            <img
-              className="h-[20px] md:h-[32px] px-2 object-scale-down"
-              src={McAfeeIcon}
-            ></img>
-            <img
-              className="h-[20px] md:h-[32px] px-2 object-scale-down"
-              src={NortonIcon}
-            ></img>
+        <Header></Header>
+        <section className="px-5 lg:px-0">
+          <div className="flex flex-col items-center justify-center mt-10 md:mt-[-20px]">
+            <h1 className="text-[32px] md:text-[48px] text-center font-medium mb-3">
+              Wait! Your Order In Progress.
+            </h1>
+            <p className="text-center text-[#4D5254] md:text-[24px]">
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
+            </p>
           </div>
-        </header>
+          <Steps></Steps>
+        </section>
       </main>
       <Footer></Footer>
     </div>
