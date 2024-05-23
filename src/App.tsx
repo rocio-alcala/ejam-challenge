@@ -1,7 +1,11 @@
 import Article from "./components/Article";
+import Button from "./components/Button";
+import DiscountCard from "./components/DiscountCard";
 import Footer from "./components/Footer";
+import GuaranteeCard from "./components/GuaranteeCard";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
+import PayMedia from "./components/PayMedia";
 import Steps from "./components/Steps";
 
 function App() {
@@ -21,6 +25,10 @@ function App() {
           </div>
           <Steps></Steps>
           <Article></Article>
+          <DiscountCard></DiscountCard>
+          <Button></Button>
+          <PayMedia></PayMedia>
+          <GuaranteeCard></GuaranteeCard>
         </section>
       </main>
       <Footer></Footer>
