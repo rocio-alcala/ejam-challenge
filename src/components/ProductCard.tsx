@@ -16,9 +16,9 @@ const mockProduct = {
 export default function ProductCard() {
   return (
     <div className="flex flex-col">
-      <div className="flex">
+      <div className="flex py-2 lg:py-4">
         <img src={mockProduct.imagePath} />
-        <div className="flex flex-col p-6 pr-0 justify-between flex-1">
+        <div className="flex flex-col p-6 lg:py-0 pr-0 justify-between flex-1">
           <div className="flex justify-between items-center">
             <h4 className="font-semibold text-[18px]">{mockProduct.title}</h4>
             <div className="flex items-center gap-2">
@@ -41,9 +41,12 @@ export default function ProductCard() {
             <img src={StockIcon} className="pr-5 h-[12px]" />
             <p className="text-[#37465A]">{mockProduct.stock} left in Stock</p>
           </div>
+          <div className="text-[#4D5254] text-start hidden lg:inline">
+            {mockProduct.description}
+          </div>
         </div>
       </div>
-      <div className="text-[#4D5254] text-center p-4">
+      <div className="text-[#4D5254] text-center p-4 lg:hidden">
         {mockProduct.description}
       </div>
 

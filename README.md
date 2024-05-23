@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# Full Stack Developer Test Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Instructions
 
-Currently, two official plugins are available:
+The task was to recreate the design in the following Figma file with pixel-perfect accuracy using the technologies of my choice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[🎨 Link al diseño de Figma](https://www.figma.com/file/gHf56mhtFr0lXky0poofoQ/ejam---Clarifion-Upsell-%5B-Client-V-%5D-(Copy)?type=design&node-id=0%3A1&mode=design&t=GJZXccV6TZ9cQBZT-1
+)
 
-## Expanding the ESLint configuration
+### Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The technologies used were TypeScript, React, and Tailwind CSS, along with React Icons for styling
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Deploy
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+You can see the deployment of the assignment [here](https://ejam-challenge.vercel.app)

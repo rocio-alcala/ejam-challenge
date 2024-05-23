@@ -2,7 +2,7 @@ import PercentIcon from "../assets/percent.png";
 
 export default function DiscountCard() {
   return (
-    <div className="rounded-lg bg-[#EDF3FD] flex items-center p-5 gap-5 my-4">
+    <div className="rounded-lg bg-[#EDF3FD] flex items-center p-5 gap-5 my-3">
       <img src={PercentIcon} alt="percent" />
       <p>
         Save <span className="text-[#2C7EF8]">53%</span> and get{" "}

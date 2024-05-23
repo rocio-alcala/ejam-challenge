@@ -1,18 +1,14 @@
 import Article from "./components/Article";
-import Button from "./components/Button";
-import DiscountCard from "./components/DiscountCard";
 import Footer from "./components/Footer";
-import GuaranteeCard from "./components/GuaranteeCard";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
-import PayMedia from "./components/PayMedia";
 import Steps from "./components/Steps";
 
 function App() {
   return (
     <div className="flex flex-col min-h-svh">
       <NavBar></NavBar>
-      <main className="flex-1 md:px-20">
+      <main className="flex-1 md:px-20 animate-fade-in">
         <Header></Header>
         <section className="px-5 lg:px-0">
           <div className="flex flex-col items-center justify-center mt-10 md:mt-[-20px]">
@@ -25,10 +21,6 @@ function App() {
           </div>
           <Steps></Steps>
           <Article></Article>
-          <DiscountCard></DiscountCard>
-          <Button></Button>
-          <PayMedia></PayMedia>
-          <GuaranteeCard></GuaranteeCard>
         </section>
       </main>
       <Footer></Footer>

@@ -15,7 +15,7 @@ export default function NavBar() {
   const [actualSlice, setActualSlice] = useState(0);
 
   return (
-    <nav className="bg-[#252F3D] text-[#FFFFFF] text-xs items-center">
+    <nav className="bg-[#252F3D] text-[#FFFFFF] text-xs items-center animate-fade-in-top">
       {/* desktop navbar */}
       <ul className="lg:flex flex-wrap justify-between items-center hidden px-20">
         {navbarList.map((item) => (
