@@ -18,8 +18,8 @@ export default function ReviewCard() {
           <div className="flex gap-1">
             {Array(mockReview.stars)
               .fill(0)
-              .map(() => (
-                <IoStar className="fill-[#FFC000]" size={10} />
+              .map((_, index) => (
+                <IoStar className="fill-[#FFC000]" size={10} key={index} />
               ))}
           </div>
           <div className="flex gap-3 items-center justify-center">

@@ -33,8 +33,8 @@ export default function ProductCard() {
           <div className="flex gap-1">
             {Array(mockProduct.stars)
               .fill(0)
-              .map(() => (
-                <IoStar className="fill-[#FFC000]" size={15} />
+              .map((_, index) => (
+                <IoStar className="fill-[#FFC000]" size={15} key={index} />
               ))}
           </div>
           <div className="flex items-center">
